@@ -294,7 +294,7 @@ dt.light strong{
 	
 }
 .e2{
-	
+	list-style: inherit;
 }
 .e2 li{
 	width:100%;
@@ -303,6 +303,7 @@ dt.light strong{
 	padding:12px 0px;
 	border-bottom:1px solid #EEE;
 	color:#aaa;
+	list-style-type:circle;
 }
 .e2 li b a{
 	color:#555;

@@ -108,7 +108,7 @@ class TypeLink
 
     //获得某类目的链接列表 如：类目一>>类目二>> 这样的形式
     //islink 表示返回的列表是否带连接
-    function GetPositionLink($islink=true)
+    function GetPositionLink($islink=false)
     {
         $indexpage = "<a href='".$this->indexUrl."'>".$this->indexName."</a>";
         if($this->valuePosition!="" && $islink)

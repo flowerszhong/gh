@@ -17,3 +17,18 @@ row = '20' 获取的栏目返回值
 其他说明：
 除了宏标记外，channelArtlist 是唯一一个可以直接嵌套其它标记的标记，不过仅限于嵌套 
 {dede:type}{/dede:type} 和 {dede:arclist}{/dede:arclist} 两个标记。
+
+
+
+ {dede:channelartlist typeid='12,13,17,18,19,20,21' type='top'  row='10' currentstyle="<li class='hover'><a href='{dede:field name='typeurl'/}' {dede:field name='rel'/}><span>{dede:field name='typename'/}</span></a></li>"}
+<li><a href='{dede:field name='typeurl'/}' {dede:field name='rel'/}><span>{dede:field name='typename'/}</span></a></li>
+{/dede:channelartlist}
+
+
+ {dede:channelartlist typeid='12,13,17,18,19,20,21' type='top'  row='10'}
+<li><a href='{dede:field name='typeurl'/}' {dede:field name='rel'/}><span>{dede:field name='typename'/}</span></a></li>
+{/dede:channelartlist}
+
+{dede:channel typeid='12,13,17,18,19,20,21' type='top'  row='10' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+<li><a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a></li>
+{/dede:channel}

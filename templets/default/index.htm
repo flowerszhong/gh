@@ -6,6 +6,7 @@
   <meta name="description" content="{dede:global.cfg_description/}" />
   <meta name="keywords" content="{dede:global.cfg_keywords/}" />
   <link href="{dede:global.cfg_templets_skin/}/style/gh-main.css" rel="stylesheet" media="screen" type="text/css" />
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
   <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
   <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmspath/}/images/js/j.js" ></script>
   <script language="javascript" type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/pic_scroll.js"></script>
@@ -38,7 +39,7 @@
       <div class="bignews">
         <!--头条-->
         <div class="onenews">
-          {dede:arclist flag='h' limit='0,1' infolen='230'}
+          {dede:arclist flag='h' limit='0,1' infolen='800'}
           <h2>
             <a href="[field:arcurl/]">[field:title/]</a>
           </h2>
@@ -49,13 +50,13 @@
           {/dede:arclist}
         </div>
         <!-- /onenews -->
-        <div class="d1">
+        <!-- <div class="d1">
           {dede:arclist flag='h' limit='1,4'}
           <div class='d1arc'>
             <a href="[field:arcurl/]">[field:title/]</a>
           </div>
           {/dede:arclist}
-        </div>
+        </div> -->
         <!--/头条-->
         <div class='newarticle'>最新文章</div>
         <ul class="c2 ico1">
@@ -78,7 +79,7 @@ var swf_width=280;
 var swf_height=192;
 //文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
 var configtg='0xffffff|0|0x3FA61F|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
-var configtg='0xffffff|0|0|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
+var configtg='0xffffff|0|0x316301|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
 var files = "";
 var links = "";
 var texts = "";
@@ -125,6 +126,9 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
         </dl>
       </div>
       <!-- /latestnews -->
+
+      <div style="clear:both;"></div>
+      
       <div class="picnews">
         <dl class="tbox light">
           <dt class='light'> <strong>图文资讯</strong>
@@ -148,16 +152,17 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
         </dl>
       </div>
       <!-- /picnews -->
+
       <div class="listbox">
-        {dede:channelartlist typeid='1,6'}
-        <dl class="tbox">
+        {dede:channelartlist typeid='12,13'}
+        <dl class="tbox light">
           <dt>
             <strong><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></strong> 
             <span class="more">
               <a href="{dede:field name='typeurl'/}">更多...</a>
             </span>
           </dt>
-          <dd>
+          <dd class='light'>
             <ul class="d1 ico3">
               {dede:arclist titlelen='60' row='8'}
               <li>
@@ -173,15 +178,56 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
       <!-- /listbox --> </div>
     <!-- /pleft -->
     <div class="pright">
-      <!-- /usercenter -->
       <div class="commend mt1">
         <dl class="tbox light">
           <dt class='light'>
-            <strong>推荐内容</strong>
+            <strong>{dede:type type='self' typeid='22'}
+              [field:typename/] 
+              {/dede:type}</strong>
           </dt>
           <dd class='light'>
             <ul class="c1 ico2">
-              {dede:arclist flag='c' titlelen=42 row='16' tagid='dedecms' pagesize='8'}
+              {dede:arclist typeid='22' titlelen=42 row='16' tagid='dedecms' pagesize='8'}
+              <li class='dotline'>
+                <a href="[field:arcurl/]">[field:title/]</a>
+              </li>
+              {/dede:arclist}
+            </ul>
+          </dd>
+        </dl>
+      </div>
+
+
+      <div class="commend mt1">
+        <dl class="tbox light">
+          <dt class='light'>
+            <strong>{dede:type type='self' typeid='19'}
+              [field:typename/] 
+              {/dede:type}</strong>
+          </dt>
+          <dd class='light'>
+            <ul class="c1 ico2">
+              {dede:arclist typeid='19' titlelen=42 row='16' tagid='dedecms' pagesize='8'}
+              <li class='dotline'>
+                <a href="[field:arcurl/]">[field:title/]</a>
+              </li>
+              {/dede:arclist}
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      
+
+      <div class="commend mt1">
+        <dl class="tbox light">
+          <dt class='light'>
+            <strong>{dede:type type='self' typeid='13'}
+              [field:typename/] 
+              {/dede:type}</strong>
+          </dt>
+          <dd class='light'>
+            <ul class="c1 ico2">
+              {dede:arclist typeid='13' titlelen=42 row='16' tagid='dedecms' pagesize='8'}
               <li class='dotline'>
                 <a href="[field:arcurl/]">[field:title/]</a>
               </li>
@@ -194,13 +240,13 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
         <div class="commend mt1">
           <dl class="tbox light">
             <dt class='light'>
-              <strong>{dede:type type='self' typeid='8'}
+              <strong>{dede:type type='self' typeid='23'}
                 [field:typename/] 
                 {/dede:type}</strong>
             </dt>
             <dd class='light'>
               <ul class="c1 ico2">
-                {dede:arclist typeid='8' titlelen=42 row='16' tagid='dedecms' pagesize='8'}
+                {dede:arclist typeid='23' titlelen=42 row='16' tagid='dedecms' pagesize='8'}
                 <li class='dotline'>
                   <a href="[field:arcurl/]">[field:title/]</a>
                 </li>
@@ -210,7 +256,25 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
           </dl>
         </div>
 
-      <div class="hot mt1">
+
+       <!--  <div class="commend mt1">
+          <dl class="tbox light">
+            <dt class='light'>
+              <strong>推荐内容</strong>
+            </dt>
+            <dd class='light'>
+              <ul class="c1 ico2">
+                {dede:arclist flag='c' titlelen=42 row='16' tagid='dedecms' pagesize='8'}
+                <li class='dotline'>
+                  <a href="[field:arcurl/]">[field:title/]</a>
+                </li>
+                {/dede:arclist}
+              </ul>
+            </dd>
+          </dl>
+        </div> -->
+
+      <!-- <div class="hot mt1">
         <dl class="tbox light">
           <dt class='light'>
             <strong>本月热点</strong>
@@ -225,7 +289,7 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
             </ul>
           </dd>
         </dl>
-      </div>
+      </div> -->
     </div>
     <!-- /pleft --> 
     </div>

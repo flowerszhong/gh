@@ -14,12 +14,13 @@ require_once(DEDEINC.'/userlogin.class.php');
 header('Cache-Control:private');
 $dsql->safeCheck = FALSE;
 $dsql->SetLongLink();
-$cfg_admin_skin = 1; // 后台管理风格
+$cfg_admin_skin = 4; // 后台管理风格
 
 if(file_exists(DEDEDATA.'/admin/skin.txt'))
 {
 	$skin = file_get_contents(DEDEDATA.'/admin/skin.txt');
 	$cfg_admin_skin = !in_array($skin, array(1,2,3,4))? 1 : $skin;
+    $cfg_admin_skin = trim($cfg_admin_skin);
 }
 
 //获得当前脚本名称，如果你的系统被禁用了$_SERVER变量，请自行更改这个选项

@@ -128,14 +128,60 @@
 	background:url(../images/green_skin.png) 0 -188px repeat-x;
 	clear:both;
 }
+
+
 .light dd{
 	border-left:1px solid #DADADA;
 	border-right:1px solid #DADADA;
 	/*padding:4px 4px 0px;*/
 	overflow:hidden;
 }
+
+
+/*override style*/
+
+.tbox{
+	margin:0 0 8px 0;
+	border-bottom:1px solid #316301;
+	overflow:hidden;
+	background:url(../images/green_skin.png) 0 -294px repeat-x;
+}
+
+.light dt{
+	height:24px;
+	border:1px solid #316301;
+	border-bottom:10px solid #316301;
+	overflow:hidden;
+	background:none;
+	clear:both;
+}
+
+
+.light dd{
+	border-left:1px solid #316301;
+	border-right:1px solid #316301;
+	/*padding:4px 4px 0px;*/
+	overflow:hidden;
+}
+
+.index .bignews {
+	width: 424px;
+	height: 408px!important;
+	float: right;
+	border: 1px solid #316301!important;
+	overflow: hidden;
+}
+
+
 dt.light strong{
 	color:#316301;
+	/*color:#fff;*/
+
+	float: left;
+	width:100px;
+	height: 24px;
+	text-indent: 15px;
+	background:url(../images/cat-icon.gif) 0 1px no-repeat;
 }
 /*--------------------------------------------------
  box layout (prefix space:a,b)
@@ -296,7 +342,7 @@ dt.light strong{
 .e2{
 	list-style: inherit;
 }
-.e2 li{
+/*.e2 li{
 	width:100%;
 	overflow:hidden;
 	clear:both;
@@ -304,7 +350,18 @@ dt.light strong{
 	border-bottom:1px solid #EEE;
 	color:#aaa;
 	list-style-type:circle;
+}*/
+
+.e2 li{
+	overflow:hidden;
+	clear:both;
+	padding:0px 0 5px 12px;
+	border-bottom:1px solid #EEE;
+	color:#aaa;
+	list-style-type:circle;
+	background: url(../images/ico-2.gif) 6px 11px no-repeat;
 }
+
 .e2 li b a{
 	color:#555;
 }

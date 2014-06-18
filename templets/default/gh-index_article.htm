@@ -13,9 +13,9 @@
 <div class="w960 center clear mt1">
  <div class="pleft">
   <div class="listbox"> {dede:channelartlist}
-   <dl class="tbox">
-    <dt><strong><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></strong><span class="more"><a href="{dede:field name='typeurl'/}">更多...</a></span></dt>
-    <dd>
+   <dl class="tbox light">
+    <dt class='light'><strong><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></strong><span class="more"><a href="{dede:field name='typeurl'/}">更多...</a></span></dt>
+    <dd class='light'>
      <ul class="d1 ico3">
       {dede:arclist titlelen='60' row='8'}
       <li><span class="date">[field:pubdate function="MyDate('m-d',@me)"/]</span><a href="[field:arcurl /]">[field:title /]</a></li>
@@ -28,7 +28,7 @@
  </div>
  <!-- /pleft -->
  <div class="pright">
-  <div class="commend">
+  <!-- <div class="commend">
    <dl class="tbox light">
     <dt class='light'><strong>推荐内容</strong></dt>
     <dd class='light'>
@@ -41,7 +41,7 @@
      </ul>
     </dd>
    </dl>
-  </div>
+  </div> -->
   <!-- /commend -->
   <div class="hot mt1">
    <dl class="tbox light">

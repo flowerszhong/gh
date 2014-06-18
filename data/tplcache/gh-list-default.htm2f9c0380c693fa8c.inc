@@ -21,17 +21,17 @@ $z[8][4]['pagesize']="10";
 $z[9]=Array("pagelist","",1209,1287);
 $z[9][4]['listitem']="info,index,end,pre,next,pageno,option";
 $z[9][4]['listsize']="5";
-$z[10]=Array("channel","\r\n      <li><a href='[field:typeurl/]'>[field:typename/]</a></li>\r\n      ",1491,1698);
+$z[10]=Array("channel","\r\n      <li><a href='[field:typeurl/]'>[field:typename/]</a></li>\r\n      ",1546,1753);
 $z[10][4]['type']="son";
 $z[10][4]['currentstyle']="<li><a href='~typelink~' class='thisclass'>~typename~</a></li>";
-$z[11]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\">[field:title/]</a>\r\n       <p>[field:description function='cn_substr(@me,80)'/]...</p>\r\n      </li>\r\n      ",1906,2107);
-$z[11][4]['flag']="c";
-$z[11][4]['titlelen']="42";
-$z[11][4]['row']="6";
-$z[12]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\">[field:title/]</a></li>\r\n      ",2341,2460);
-$z[12][4]['row']="10";
-$z[12][4]['orderby']="click";
-$z[13]=Array("include","",2541,2578);
+$z[11]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\">[field:title/]</a></li>\r\n      ",1995,2114);
+$z[11][4]['row']="10";
+$z[11][4]['orderby']="click";
+$z[12]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\">[field:title/]</a>\r\n       <p>[field:description function='cn_substr(@me,80)'/]...</p>\r\n      </li>\r\n      ",2327,2528);
+$z[12][4]['flag']="c";
+$z[12][4]['titlelen']="42";
+$z[12][4]['row']="6";
+$z[13]=Array("include","",2617,2654);
 $z[13][4]['filename']="footer.htm";
 
 ?>

@@ -1,14 +1,24 @@
 <?php
 $cfg_disable_funs = 'phpinfo,eval,exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,show_source,file_put_contents';
 $cfg_disable_tags = 'php';
-$cfg_basehost = 'http://localhost';
+
+
+// for local
 $cfg_cmspath = '/gh';
-$cfg_cookie_encode = 'fNgFVHAcqkO4TCQ58ftEkBwsAawgK7wA';
 $cfg_indexurl = '/gh';
+$cfg_basehost = 'http://localhost';
+
+//for live
+// $cfg_basehost = 'http://gh.gdepc.cn';
+// $cfg_indexurl = '';
+// $cfg_cmspath = '';
+
+
+$cfg_cookie_encode = 'fNgFVHAcqkO4TCQ58ftEkBwsAawgK7wA';
 $cfg_backup_dir = 'backupdata';
-$cfg_indexname = '主页';
-$cfg_webname = '我的网站';
-$cfg_adminemail = 'admin@dedecms.com';
+$cfg_indexname = '工会首页';
+$cfg_webname = '广东环境保护工程职业学院--工会';
+$cfg_adminemail = 'flowerszhong@hotmail.com';
 $cfg_html_editor = 'ckeditor';
 $cfg_arcdir = '/a';
 $cfg_medias_dir = '/uploads';

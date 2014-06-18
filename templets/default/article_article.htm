@@ -49,20 +49,22 @@ function CheckLogin(){
 <!-- //右边内容开始 -->
 <div class="pright"> 
  <div class="pright">
-  <div>
-   <dl class="tbox">
-    <dt><strong>栏目列表</strong></dt>
-    <dd>
-     <ul class="d6">
-      {dede:channel type='son' currentstyle="
-      <li><a href='~typelink~' class='thisclass'>~typename~</a></li>
-      "}
-      <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
-      {/dede:channel}
-     </ul>
-    </dd>
-   </dl>
-  </div>
+   <div class="commend">
+    <dl class="tbox light">
+     <dt class='light'><strong>栏目列表</strong></dt>
+     <dd class='light'>
+      <ul class="d6">
+       {dede:channel type='son' currentstyle="
+       <li><a href='~typelink~' class='thisclass'>~typename~</a></li>
+       "}
+       <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+       {/dede:channel}
+      </ul>
+     </dd>
+    </dl>
+   </div>
+
+
   <div class="commend mt1">
    <dl class="tbox light">
     <dt class='light'><strong>推荐内容</strong></dt>

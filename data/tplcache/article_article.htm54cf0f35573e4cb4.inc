@@ -27,17 +27,17 @@ $z[11][4]['name']="pubdate";
 $z[11][4]['function']="MyDate('Y-m-d H:i',@me)";
 $z[12]=Array("field","",1601,1619);
 $z[12][4]['name']="body";
-$z[13]=Array("channel","\r\n      <li><a href='[field:typeurl/]'>[field:typename/]</a></li>\r\n      ",1935,2142);
+$z[13]=Array("channel","\r\n       <li><a href='[field:typeurl/]'>[field:typename/]</a></li>\r\n       ",1991,2202);
 $z[13][4]['type']="son";
 $z[13][4]['currentstyle']="<li><a href='~typelink~' class='thisclass'>~typename~</a></li>";
-$z[14]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\">[field:title/]</a>\r\n       <p>[field:description function='cn_substr(@me,80)'/]...</p>\r\n      </li>\r\n      ",2354,2555);
+$z[14]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\">[field:title/]</a>\r\n       <p>[field:description function='cn_substr(@me,80)'/]...</p>\r\n      </li>\r\n      ",2422,2623);
 $z[14][4]['flag']="c";
 $z[14][4]['titlelen']="42";
 $z[14][4]['row']="6";
-$z[15]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\">[field:title/]</a></li>\r\n      ",2789,2908);
+$z[15]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\">[field:title/]</a></li>\r\n      ",2857,2976);
 $z[15][4]['row']="10";
 $z[15][4]['orderby']="click";
-$z[16]=Array("include","",2991,3028);
+$z[16]=Array("include","",3059,3096);
 $z[16][4]['filename']="footer.htm";
 
 ?>
